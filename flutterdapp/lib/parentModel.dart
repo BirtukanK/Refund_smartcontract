@@ -32,14 +32,14 @@ class parentModel extends ChangeNotifier {
 
   Future<void> getAbi() async {
     _abi = await rootBundle.loadString("../assets/abi.json");
-    _contractAddress = "0x4943030bce7e49dd13b4dd120c0fef7dde3c18a0";
+    _contractAddress = "0x4cc9fc60041fd5446d4fa7f5f0e462472dee392b";
 //print(_abi);
 //print(_contractAddress);
   }
 
   Future<void> getCredentials() async {
     _credentials = EthPrivateKey.fromHex(
-        "d585835f87981557df21fbaf99df4c9d06fd374b6efd121c027e0655cee5b627");
+        "0xe491947ec95a244ee3be145a12087b8302aaa4cc9c11b31b9adc19980179deee");
 //print(_credentials);
   }
 
